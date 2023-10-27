@@ -58,7 +58,7 @@ there are no changes in the type name.
 Assemblies with different versions can co-exist and be used side by side. Some nodes can continue running old code, while
 other nodes can execute computations with a newer version of the same class.
 
-The `AssemblyVersion` attribute can include asterisk (`*`) to enable the auto-increment on build: `[assembly: AssemblyVersion("1.0.*")]`.
+The `AssemblyVersion` attribute can include asterisk (`+*+`) to enable the auto-increment on build: `+[assembly: AssemblyVersion("1.0.*")]+`.
 This way you can keep the cluster running, repeatedly modify and run computations, and new assembly versions will be deployed every time.
 
 === Dependencies
